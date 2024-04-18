@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Tauri&display=swap');
+html{
+     font-family: "Tauri", sans-serif; ;
+    scrollbar-width: 10px;
+
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+    background: #ff8733;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgb(0,0,0.0.563) inset;
+}
+body{
+    background-color: black;
+    color: whitesmoke;
+    
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(235, 233, 227) ;
+    border-radius: 0% 20px;
+}
+.home{
+    height:100vh;
+    width:100%;
+   /* background-color: azure; */
+    border: 2px white solid ;
+    .home-nav{
+    display:flex;
+     align-items: center; 
+    justify-content: end;
+    gap:20px;
+    animation: slide 3s ease-out;
+
+      a{
+        text-decoration: none;
+        color: white;
+        font-family: 1.5rem;
+        padding-top: 5px;
+
+    }
+}
+a:hover{
+    color: #ff8733;
+}
+    button{
+        font-family: "Tauri", sans-serif;
+        height: 30px;
+        width:150px;
+        position:relative;
+        bottom: 5px;
+        font-family: 1rem;
+        background-color: #ff8733;
+        border: none;
+
+    }
+    button:hover{
+        background-color: white;
+        transform: translate(-3px,-3px);
+        transition: all 0.2s ease-in-out;
+    }
+    a:nth-child(2){
+        color: #ff8733;
+    }
+    /* a:nth-child(1){
+        color:brown;
+    } */
+
+}
+.home-content{
+    margin:50px 0px 0px 150px;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    .home-text{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    img{
+        animation: slide 4s linear;
+    }
+   
+    h1{
+        font-size: 3rem;
+        margin:0;
+        animation:slide2 1s linear reverse 4s;
+
+    }
+    h3{
+        font-size: 2.5rem;
+        animation:slide2 1s linear reverse 5s;
+     }
+     h3:hover{
+        color:#ff8733
+     }
+}
+@keyframes slide{
+    from{
+        transform: translate(-500px);
+        opacity:0;
+    }
+    to{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide2{
+    from{
+        transform: translate(0);
+        opacity:0;
+    }
+    to{
+        transform: translate(400px);
+        opacity: 1;
+    }
+}
+ .about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    h3{
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        top: 950px;
+        left: 200px;
+        text-align: justify;
+    }
+    .me1{
+        position: absolute;
+        left: 850px;
+        top: 850px;
+        margin: 0;
+    }
+}
+.skills{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+
+}
+.card{
+    height: 500px;
+    width: 400px;
+    background-color: plum;
+    /* position: absolute; */
+    /* top: 1100px; */
+    /* left: 200px;  */
+    outline: 2px white solid;
+    border-radius: 10%;
+    gap:20px;
+}
+.card:nth-child(4){
+    height: 500px;
+    width: 400px;
+    background-color: plum;
+      position: absolute; 
+    top: 2200px;
+    left: 100px;
+    outline: 2px white solid;
+    border-radius: 10%;
+    gap:20px;
+    img{
+        border: 2px pink solid;
+        border-radius: 50%;
+        background-color: blueviolet;
+        position: absolute;
+        top:5px;
+        left: 8px;
+
+    }
+}
+.card:nth-child(5){
+    height: 500px;
+    width: 400px;
+    background-color: plum;
+      position: absolute; 
+    top: 2200px;
+    left: 550px;
+    outline: 2px white solid;
+    border-radius: 10%;
+    gap:20px;
+}
+.card:nth-child(6){
+    height: 500px;
+    width: 400px;
+    background-color: plum;
+      position: absolute; 
+    top: 2200px;
+    left: 1000px;
+    outline: 2px white solid;
+    border-radius: 10%;
+    gap:20px;
+}
+
+    svg{
+        background-color: orange;
+        border-radius: 50%;
+        margin: 10px 0px 0px 10px;
+        outline-offset: 2px;
+
+    }
+    hr{
+        height: 2px;
+        width: 380px;
+        background-color: aliceblue;
+    }
+    h5{
+        width: 95%;
+        text-align: justify;
+        font-weight: 500;
+        line-height: 32px;
+        margin: auto;
+    }
+    .card:hover{
+        background-color: orange;
+        transition: all 1s  ease-in;
+        outline: none;
+    }
+    
+        svg{
+            border: 2px black solid;
+            outline: white solid;
+            outline-offset: 2px;
+            border-radius: 50%;
+        
+
+    
+    }
+
+
+
+    .project{
+        height: 100vh;
+        width:100%;
+        border: 1px solid;
+        border-radius: 20px;
+        position: relative;
+        top: 700px;
+        .card{
+            height: 546px;
+            width:400px;
+            border-radius: 20px;
+            background-color: lightcyan;
+            position: absolute;
+            top: 85px;
+            left:20px;
+           h1{
+            color: blue;
+            font-size: 30px;
+            font-family: cursive;
+            text-align: center;
+            -webkit-text-stroke: 1px black;
+
+           }
+           button{
+            font-family: "Tauri", sans-serif;
+             height: 30px;
+             width:150px;
+             position:relative;
+             top: 369px;
+             left:20px;
+             font-family: 0.2rem;
+             background-color: lightcyan;
+             border: 2px solid;
+             border-radius: 20%;
+
+
+           }
+           .button:nth-child(2){
+            font-family: "Tauri", sans-serif;
+             height: 30px;
+             width:150px;
+             position:relative;
+             top:80px;
+             font-family: 0.2rem;
+             background-color: lightcyan;
+             border: 2px solid;
+             border-radius: 20%;
+         }
+         button:hover{
+            background-color: darkorange;
+         }
+           img{
+            height: 345px;
+            width: 412px;
+            position: absolute;
+           }
+
+        }
+        .card1{
+            height: 546px;
+            width:400px;
+            border-radius: 20px;
+            background-color: lightcyan;
+            position: absolute;
+            top: 85px;
+            left:500px;
+            h1{
+                color: darkslategrey;
+                font-size: 30px;
+                font-family: cursive;
+                text-align: center;
+                -webkit-text-stroke: 1px black;
+    
+               }
+               button{
+                font-family: "Tauri", sans-serif;
+                 height: 30px;
+                 width:150px;
+                 position:relative;
+                 top: 369px;
+                 left:20px;
+                 font-family: 0.2rem;
+                 background-color: lightcyan;
+                 border: 2px solid;
+                 border-radius: 20%;
+    
+    
+               }
+               .button:nth-child(2){
+                font-family: "Tauri", sans-serif;
+                 height: 30px;
+                 width:150px;
+                 position:relative;
+                 top:80px;
+                 font-family: 0.2rem;
+                 background-color: lightcyan;
+                 border: 2px solid;
+                 border-radius: 20%;
+             }
+             button:hover{
+                background-color: darkcyan;
+             }
+             img{
+                height: 345px;
+                width: 400px;
+                position: absolute;
+               }
+
+        }
+        .card2{
+            height: 546px;
+            width:400px;
+            border-radius: 20px;
+            background-color: lightcyan;
+            position: absolute;
+            top: 85px;
+            left:930px;
+            h1{
+                color: darkorchid;
+                font-size: 30px;
+                font-family: cursive;
+                text-align: center;
+                -webkit-text-stroke: 1px black;
+    
+               }
+               button{
+                font-family: "Tauri", sans-serif;
+                 height: 30px;
+                 width:150px;
+                 position:relative;
+                 top: 369px;
+                 left:20px;
+                 font-family: 0.2rem;
+                 background-color: lightcyan;
+                 border: 2px solid;
+                 border-radius: 20%;
+    
+    
+               }
+               .button:nth-child(2){
+                font-family: "Tauri", sans-serif;
+                 height: 30px;
+                 width:150px;
+                 position:relative;
+                 top:80px;
+                 font-family: 0.2rem;
+                 background-color: lightcyan;
+                 border: 2px solid;
+                 border-radius: 20%;
+             }
+             button:hover{
+                background-color: darkgoldenrod;
+             }
+             img{
+                height: 345px;
+                width: 400px;
+                position: absolute;
+               }
+
+        }
+
+    }
+    .contact{
+        height: 98vh;
+        width:100%;
+        border: 1px solid;
+        /* padding: 5px; */
+        border-radius: 20px;
+        position: relative;
+        top: 850px;
+        h1{
+            border:10px pink solid;
+            margin: 10px;
+            padding: 10px;
+            color: deeppink;
+            font-size: 2rem;
+            font-family: sans-serif;
+            text-align: left;
+        }
+        
+        .box{
+            height: 500px;
+            width:600px;
+            border: 3px orchid solid ;
+            border-radius: 30px;
+            position: absolute;
+            top:20px; 
+            left:650px;
+            input{
+                height: 30px;
+                width: 300px;
+                border: 2px darkred solid;
+                border-radius: 20px;
+                margin-left: 40px;
+                /* position: absolute; */
+                /* left:0px; */
+            }
+            label{
+                height: 30px;
+                width:80px;
+                margin-left: 20px;
+            }
+            textarea{
+                height: 200px;
+                width: 300px;
+                border: 2px darkred solid;
+                border-radius: 20px;
+                margin-top: -46px;
+                margin-left: 108px;
+            }
+
+    }
+    .whatsapp{
+        height: 150px;
+        width:320px;
+        position: absolute;
+        top:600px;
+        left:350px;
+    }
+    .insta{
+        position: absolute;
+        top: 600px;
+        left:550px;
+    }
+    .facebook{
+        position:absolute;
+        top:600px;
+        left:750px;
+    }
+    .linkdin{
+        position:absolute;
+        top:600px;
+        left:900px;
+    }
+        
+
+    }
+    
+
+
+    
